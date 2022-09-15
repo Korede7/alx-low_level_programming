@@ -6,12 +6,14 @@
 *@n: parameter
 *Return: returns nothing
 */
+	while (n-- > 0)
 
+	
 void print_line(int n)
 {
-	while (n-- > 0)
+		_putchar('_');
 	{
-		putchar('_');
+	_putchar('\n');
 	}
 	putchar("\n");
 }
