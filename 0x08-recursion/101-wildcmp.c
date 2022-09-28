@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- * wildcmp - check the code for Holberton School students.
+ * wildcmp - compares two strings and returns 1 if otherwise return 0.
  * @s1: string
  * @s2: string
- * Return: Always 0.
+ * Return: 0 or 1.
  */
 
 int wildcmp(char *s1, char *s2)
@@ -19,6 +19,7 @@ return (checker(s1, s2, 0, 0, -1));
  * @i: int
  * Return: 0 or 1
  */
+
 int checkLast(char *s, int i)
 {
 if (s[i] == '*')
@@ -29,6 +30,7 @@ else if (s[i] == '\0')
 return (0);
 
 }
+
 /**
  * checker - helper
  * @s1: string
@@ -38,6 +40,7 @@ return (0);
  * @wildUsed: int
  * Return: Always 0.
  */
+
 int checker(char *s1, char *s2, int a, int b, int wildUsed)
 {
 
