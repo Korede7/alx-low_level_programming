@@ -24,9 +24,9 @@ int checkLast(char *s, int i)
 if (s[i] == '*')
 	return (checkLast(s, i + 1));
 else if (s[i] == '\0')
-	return (0);
+	return (1);
 
-return (1);
+return (0);
 
 }
 
