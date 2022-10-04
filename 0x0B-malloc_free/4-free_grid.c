@@ -1,25 +1,16 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 /**
- * free_grid - function to free memory
- * @grid: pointer to grid of int type
- * @height: int type
- * Return: clean up memory
- */
-
+* free_grid -> removing memory allocation
+* @grid: grid to be freed
+* @height: height of matrix
+* Return: nothing
+*/
 void free_grid(int **grid, int height)
 {
-	int y;
+	int i;
 
-	if (grid == NULL || grid == 0)
-	{
-		return;
-	}
-	for (y = 0; y < height;  y++)
-	{
-		free(grid[y]);
-	}
+	for (i = 0; i < height; i++)
+		free(grid[i]);
 	free(grid);
 }
